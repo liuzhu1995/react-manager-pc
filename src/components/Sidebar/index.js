@@ -1,9 +1,19 @@
 import React from 'react';
+import './style.less';
+import {Link} from "react-router-dom";
 
-const NavLeft = () => {
+const Sidebar = () => {
   return (
-    <div>NavLeft</div>
+    <div className="sidebar-menu">
+      Sidebar Left
+      <div>
+        <Link to="/dashboard/home">home</Link>
+      </div>
+      <div>
+        <Link to="/user/login">login</Link>
+      </div>
+    </div>
   )
 };
 
-export default NavLeft;
+export default Sidebar;
